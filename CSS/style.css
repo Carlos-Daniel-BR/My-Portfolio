@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.negrito-verde {
+    color: #2DD881;
+}
+
+.azul-tecnologia {
+    color: #44c4ff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #011936;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.5);
+    color: #44c4ff;
+    border-radius: 5px;
+    transition: background 500ms ease;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #001229;
+    color: #44c4ff;
+}
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #44c4ff;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #011936;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 100;
+}
+
+#tech {
+    color: #2DD881;
+}
+
+.navbar-brand {
+    color: #44c4ff;
+    font-size: 2em;
+}
+
+.navbar-brand:hover {
+    color: #69d0ff;
+}
+
+.nav-item {
+    font-size: 1.1em;
+}
+
+#nav-link-home {
+    color: #2DD881;
+}
+
+#nav-link-home:hover {
+    background-color: #001229;
+    color: #00ffaa;
+    text-decoration: underline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2DD881;
+}
+
+.nav-link:hover {
+    background-color: #001229;
+    color: #00ffaa;
+}
+
+#navbarNavDropdown {
+    justify-content: right;
+    text-align: center;
+}
+
+#showcase {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url("../img/background2.gif") no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: #0000007e;
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+    visibility: hidden;
+}
+
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+
+#abertura {
+    font-size: 1.5rem;
+}
+
+#meu-nome {
+    color: #44c4ff;
+}
+
+.container p {
+    font-size: 250rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #2DD881;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+#showcase-container p {
+    font-size: 1.5rem;
+    padding: 7px 0;
+}
+
+/* Testimonials */
+
+#div-about-me {
+    width: 100%;
+    background: #01152e;
+    color: #eee;
+    padding: 20px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #001229;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+#about-me-container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-image {
+    height: 200px;
+    width: auto;
+}
+
+.about-me p {
+    padding: 20px;
+}
+
+#skills {
+    width: 100%;
+    background: #01152e;
+    padding: 50px;
+}
+
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
+}
+
+.power-ups {
+    display: inline-block;
+    width: 35%;
+}
+
+/* About */
+#features {
+    width: 100%;
+    background: #011936;
+    padding: 50px;
+}
+
+#features-container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  50px;
+    visibility: hidden;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: #01152e;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined {
+    color: #2DD881;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#product {
+    background: #001229;
+    color: white;
+    width: 100%;
+    padding: 50px;
+}
+
+#product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.responsive-image {
+    height: 450px;
+    animation: celular-flutuando 2s ease-in-out infinite;
+}
+
+@keyframes celular-flutuando {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#items {
+    width: 650px;
+}
+
+#items .item {
+    padding: 10px;
+    margin: 15px 0px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.item p {
+    text-align: justify;
+}
+
+/* Gallery */
+
+#gallery {
+    background: #01152e;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#gallery-container {
+    display: grid;
+    padding-bottom: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    visibility: hidden;
+}
+
+.nome-projeto {
+    color: white;
+    padding: 0px;
+    margin: 0;
+}
+
+.gallery-image {
+    display: inline-block;
+    width: 65%;
+    border-radius: 3px;
+}
+
+#hidden-image0 {
+    display: none;
+}
+
+#hidden-image1 {
+    display: none;
+}
+
+#button-view {
+    display: flex;
+    justify-content: center;
+}
+
+.view-more {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: #011936;
+    color: #44c4ff;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.view-more:hover {
+    cursor: pointer;
+    background-color: #001229;
+}
+
+/* Footer */
+
+#rodape-nome {
+    text-decoration: underline;
+}
+
+#rodape-nome:hover {
+    color: #00ffaa;
+}
+
+#footer {
+    background-color: #001229;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.contato {
+    color: #44c4ff;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.contato:hover {
+    color: #2DD881;
+}
+
+
+
+
+
+
