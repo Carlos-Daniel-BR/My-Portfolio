@@ -77,10 +77,11 @@ a {
 .navbar-brand {
     color: #44c4ff;
     font-size: 2em;
+    cursor: default;
 }
 
 .navbar-brand:hover {
-    color: #69d0ff;
+    color: #44c4ff;
 }
 
 .nav-item {
@@ -265,6 +266,10 @@ a {
 .feature-title {
     font-size: 1.3rem;
     font-weight: bold;
+}
+
+.feature p {
+    text-align: justify;
 }
 
 #product {

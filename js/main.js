@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["Desenvolvedor Web", "Programador", "Bughunter", "Freelancer","Hacker ético", "Desenvolvedor Front-end", "Músico"];
+const textArray = ["Web Developer", "Front-end Developer", "Musician", "Freelancer", "Programmer", "Bughunter"];
 const typingDelay = 100;
 const erasingDelay = 65;
 const newTextDelay = 1500; // Delay between current and next text
@@ -74,11 +74,11 @@ function clique() {
   if (image0.style.display == 'inline-block' && image1.style.display == 'inline-block') {
       image0.style.display = 'none'
       image1.style.display = "none"
-      button.innerHTML = "Ver mais..."
+      button.innerHTML = "View more..."
   } else {
       image0.style.display = 'inline-block'
       image1.style.display = 'inline-block'
-      button.innerHTML = "Ver menos"
+      button.innerHTML = "Hide"
   }
 }
 
